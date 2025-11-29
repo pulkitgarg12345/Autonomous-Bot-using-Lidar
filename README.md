@@ -26,10 +26,7 @@ This README explains the purpose of each ROS2 node and how to run them.
 ros2_ws/
  └── src/
       ├── robot_control        # Custom motor + encoder control package
-      ├── rplidar_ros          # LiDAR driver
-      ├── slam_toolbox         # SLAM
-      └── ... others
-```
+     
 
 ---
 
@@ -56,7 +53,7 @@ ros2 run robot_control motor_bridge
 ## Start Encoder Odometry
 
 ```bash
-ros2 run robot_control encoder_motor
+ros2 run robot_control encoder_odom
 ```
 
 **Purpose:**
