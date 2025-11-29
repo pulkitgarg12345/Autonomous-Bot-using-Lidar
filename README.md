@@ -9,7 +9,7 @@ This project implements a **fully autonomous navigation robot** using **ROS2**, 
 The robot consists of:
 
 * **RPLiDAR A1** for 2D scan data
-* **Custom BLDC + ESC motor system** controlled via ROS2
+* **L298D Motor Driver with Arduino Nano and Raspberry Pi 4B** controlled via ROS2
 * **Encoders** for odometry
 * **IMU (optional)**
 * **Nav2 stack** for autonomous navigation
@@ -28,12 +28,10 @@ ros2_ws/
       ├── robot_control        # Custom motor + encoder control package
      
 
----
-
 # Running the Autonomous Navigation Bot
 
 Open **multiple terminals** (or use tmux). Each command below shows **what to run** and **why it is needed**.
-
+```
 ---
 
 ## Start Motor Bridge
